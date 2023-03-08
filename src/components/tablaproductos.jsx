@@ -59,7 +59,7 @@ function ProductosTable() {
 
   useEffect(() => {
     axios
-      .get('https://litet-api.onrender.com')
+      .get('https://litet-api.onrender.com/api/product')
       .then((response) => setProductos(response.data))
       .catch((error) => console.log(error));
   }, []);

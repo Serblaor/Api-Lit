@@ -31,7 +31,7 @@ const Register = () => {
       };
       setLoading(true);
       await axios
-        .post("https://litet-api.onrender.com", Usuario)
+        .post("https://litet-api.onrender.com/register", Usuario)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);

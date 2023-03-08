@@ -15,7 +15,7 @@ const Welcome = () => {
   useEffect(() => {
     if (token) {
       axios
-        .get(`https://litet-api.onrender.com`, {
+        .get(`https://litet-api.onrender.com/user`, {
           headers: {
             token: token,
           },

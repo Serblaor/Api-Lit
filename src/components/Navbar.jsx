@@ -14,9 +14,6 @@ import {
 } from "react-icons/ai";
 
 
-import LogoutButton from "./Logout";
-
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -115,7 +112,7 @@ function NavBar() {
               > 
                 
                 <AiFillStar style={{ fontSize: "1.1em" }} />
-                <LogoutButton/> 
+              
               </Button>
             </Nav.Item>
           </Nav>

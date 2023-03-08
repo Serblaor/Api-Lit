@@ -33,7 +33,7 @@ function CrearProductoForm() {
       company: producto.empresa,
     };
     try {
-      const response = await axios.post('https://litet-api.onrender.com', nuevoProducto);
+      const response = await axios.post('https://litet-api.onrender.com/api/product', nuevoProducto);
       console.log(response);
       toast.success('Producto guardado correctamente');
     } catch (error) {

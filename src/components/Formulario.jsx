@@ -46,7 +46,7 @@ function Formulario() {
     };
 
     // Envía una solicitud POST para crear una nueva compañía
-    axios.post('https://litet-api.onrender.com', formData)
+    axios.post('https://litet-api.onrender.com/api/company', formData)
     .then(response => {
       console.log(response.data);
       setOpenSnackbar(true);

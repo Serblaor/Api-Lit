@@ -27,7 +27,7 @@ const Login = () => {
       };
       setLoading(true);
       await axios
-        .post("http://localhost:9000/login", Usuario)
+        .post("https://litet-api.onrender.com/login", Usuario)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);
@@ -48,7 +48,6 @@ const Login = () => {
       setLoading(false);
     }
   };
- 
 
   return (
     <>

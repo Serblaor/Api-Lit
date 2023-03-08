@@ -10,7 +10,7 @@ function CompanyList() {
 
   useEffect(() => {
     axios
-      .get("https://litet-api.onrender.com")
+      .get("https://litet-api.onrender.com/api/company")
       .then((response) => setCompanies(response.data))
       .catch((error) => console.log(error));
   }, []);
