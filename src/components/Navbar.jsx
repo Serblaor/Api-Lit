@@ -106,13 +106,12 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                
-                target="_blank"
+                href="/login"
                 className="fork-btn-inner"
+                title="logout"
               > 
                 
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              
+                <AiFillStar style={{ fontSize: "1.1em" }} /> 
               </Button>
             </Nav.Item>
           </Nav>
